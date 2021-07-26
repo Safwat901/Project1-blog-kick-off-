@@ -1,0 +1,22 @@
+ {% extends 'base.html' %}
+
+ {%block title%}
+  Login
+  {% endblock %}
+
+
+
+  {%block content%}
+  <div class='container col-md-4 offset-4 mt-5'>
+    <form action="" class='form-group' method="post"> {%  csrf_token %}
+      <h3 class='text-center'>LOGIN FORM</h3><hr>
+      
+      <input type='text' name='username' class='form-control' id='' placeholder='Enter your username'><br>
+
+      <input type='password' name='password' class='form-control' id='' placeholder='Enter your password '><br>
+
+      <input type='submit' class='btn btn-info w-100' value='Login'>
+  </form>
+
+  </div>
+  {% endblock %} 
